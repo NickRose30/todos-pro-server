@@ -6,6 +6,6 @@ const router = express.Router();
 /* get and create todos */
 router.route('/todos')
   .get(TodoController.getAll)
-  .post('/todos', TodoController.add);
+  .post(TodoController.add);
 
 module.exports = router;
